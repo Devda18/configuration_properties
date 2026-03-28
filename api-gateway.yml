@@ -17,14 +17,14 @@ spring:
             - Path=/api/user/**
 
         - id: orders-api
-          uri: lb://orders-api
+          uri: lb://order-api
           predicates:
             - Path=/api/order/**
 
-        - id: notifications-api
-          uri: lb://notifications-api
+        - id: notification-api
+          uri: lb://notification-api
           predicates:
-            - Path=/api/notifications/**
+            - Path=/api/notification/**
 
         - id: admin-api
           uri: lb://admin-api
