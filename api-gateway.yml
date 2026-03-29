@@ -27,6 +27,6 @@ spring:
             - Path=/api/notification/**
 
         - id: admin-api
-          uri: lb://ADMIN-API
+          uri: lb://admin-api
           predicates:
             - Path=/api/admin/**
