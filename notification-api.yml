@@ -1,3 +1,6 @@
+server:
+  port:7075
+  
 spring:
     #DB properties
   datasource:
