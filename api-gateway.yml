@@ -5,27 +5,22 @@ spring:
   cloud:
     gateway:
       routes:
-      
         - id: products-api
           uri: lb://products-api
           predicates:
             - Path=/api/products/**
-
         - id: customer-api
           uri: lb://user-api
           predicates:
             - Path=/api/user/**
-
         - id: orders-api
           uri: lb://order-api
           predicates:
             - Path=/api/order/**
-
         - id: notification-api
           uri: lb://notification-api
           predicates:
             - Path=/api/notification/**
-
         - id: admin-api
           uri: lb://admin-api
           predicates:
