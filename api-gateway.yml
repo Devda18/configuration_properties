@@ -22,10 +22,6 @@ spring:
           uri: lb://ADMIN-API
           predicates:
             - Path=/api/admin/**
-
-logging:
-  level:
-    org.springframework.cloud.gateway: DEBUG
     
 server:
   port: 3333
